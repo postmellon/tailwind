@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 defineProps<{ msg: string }>()
 
@@ -9,7 +9,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <div class="card">
+  <div class="card bg-gray-700">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
@@ -32,7 +32,8 @@ const count = ref(0)
 </template>
 
 <style scoped>
-.read-the-docs {
+/* .read-the-docs {
   color: #888;
 }
+*/
 </style>
